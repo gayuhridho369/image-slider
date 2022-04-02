@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="images-slide">
+                <div class="slides fade active">
+                    <span class="number"></span>
+                    <img src="./img/1.jpg">
+                </div>
+                <div class="slides fade">
+                    <span class="number"></span>
+                    <img src="./img/2.jpg">
+                </div>
+                <div class="slides fade">
+                    <span class="number"></span>
+                    <img src="./img/3.jpg">
+                </div>
+            </div>
+
+            <div class="arrows-slide">
+                <a class="prev" onclick="slideArrow(-1)">&#10094;</a>
+                <a class="next" onclick="slideArrow(+1)">&#10095;</a>
+            </div>
+
+            <div class="dots-slide">
+                <span class="dots active" onclick="slideDot(1)"></span>
+                <span class="dots" onclick="slideDot(2)"></span>
+                <span class="dots" onclick="slideDot(3)"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src=" ./js/script.js"></script>
+
+</body>
+
+</html>
